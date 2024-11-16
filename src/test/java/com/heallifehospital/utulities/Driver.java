@@ -34,7 +34,7 @@ public class Driver {
              * bir FileInputStream sınıfı nesnesi başlatarak.
              * Burası ConfigurationReader.java sınıf nesnesini kullanarak tarayıcı tipini alacağımız yerdir.
              */
-            String browser = ConfigurationReader.getProperty("browser").toLowerCase();
+            String browser = ConfigReader.getProperty("browser").toLowerCase();
             switch (browser) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();

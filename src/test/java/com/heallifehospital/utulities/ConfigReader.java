@@ -3,13 +3,13 @@ package com.heallifehospital.utulities;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-public class ConfigurationReader {
+public class ConfigReader {
     private static Properties configFile;
     static {
 
         try {
             // Özelliklerin konumu
-            String path = System.getProperty("user.dir") + "/Configuration.properties";
+            String path = System.getProperty("user.dir") + "/configuration.properties";
             // Bu dosyayı akış olarak alıyoruz
             FileInputStream input = new FileInputStream(path);
             // Properties sınıfından bir nesne oluşturuluyor
